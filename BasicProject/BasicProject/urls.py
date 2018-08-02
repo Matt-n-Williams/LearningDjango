@@ -20,7 +20,7 @@ import app.views
 urlpatterns = [
     #Tutorial
     url(r'^$', HelloDjangoApp.views.index, name='index'),
-    url(r'^$', HelloDjangoApp.views.index, name='home'),
+    url(r'^home$', HelloDjangoApp.views.index, name='home'),
 
     # Examples:
     url(r'^$', app.views.home, name='home'),
