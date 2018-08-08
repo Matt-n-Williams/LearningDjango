@@ -44,3 +44,17 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+def profilePage(request):
+    """Renders the Profile Page page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/profilePage.html',
+        {
+            'username':'Username Placeholder',
+            'commentsMade':'Comments Made Placeholder.',
+            'recipeList':'Recipe List Placeholder',
+            'favouriteRecipes':'Favourite Recipes Placeholder',
+        }
+    )
