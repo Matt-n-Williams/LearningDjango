@@ -40,7 +40,7 @@ def about(request):
         'app/about.html',
         {
             'title':'About',
-            'message':'Your application description page.',
+            'message':'Your application description page. Check me for changes.',
             'year':datetime.now().year,
         }
     )
