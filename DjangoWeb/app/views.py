@@ -66,10 +66,11 @@ def recipes(request):
         request,
         'app/recipes.html',
         {
-            'username':'Username Placeholder',
-            'commentsMade':'Comments Made Placeholder.',
-            'recipeList':'Recipe List Placeholder',
-            'favouriteRecipes':'Favourite Recipes Placeholder',
+            'title':'Title Placeholder',
+            'picture':'Picture Placeholder',
+            'ingredients':'Ingredients PH',
+            'comments':'Comments PH',
+            'favourite':'favourite button PH',
         }
     )
 
@@ -94,10 +95,10 @@ def findRecipes(request):
         request,
         'app/findRecipes.html',
         {
-            'username':'Username Placeholder',
-            'commentsMade':'Comments Made Placeholder.',
-            'recipeList':'Recipe List Placeholder',
-            'favouriteRecipes':'Favourite Recipes Placeholder',
+            'search':'Search',
+            'sortBy':'Select the search criteria:',
+            'sortOrder':'Select the order you wish for them to appear in:',
+            'searchbar':'search bar PH',
         }
     )
 
@@ -108,9 +109,10 @@ def invite(request):
         request,
         'app/invite.html',
         {
-            'username':'Username Placeholder',
-            'commentsMade':'Comments Made Placeholder.',
-            'recipeList':'Recipe List Placeholder',
-            'favouriteRecipes':'Favourite Recipes Placeholder',
+            'title':'Invite Others',
+            'firstName':'First Name.',
+            'lastName':'Last Name.',
+            'e-mail':'e-mail',
+            'message':'message PH',
         }
     )
