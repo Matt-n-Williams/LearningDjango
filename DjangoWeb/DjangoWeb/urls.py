@@ -18,8 +18,12 @@ urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
     url(r'^contact$', app.views.contact, name='contact'),
-    url(r'^about', app.views.about, name='about'),
-    url(r'^profilePage', app.views.profilePage, name='profilePage'),
+    url(r'^about$', app.views.about, name='about'),
+    url(r'^profile$', app.views.profile, name='profile'),
+    url(r'^family$', app.views.family, name='family'),
+    url(r'^recipes$', app.views.recipes, name='recipes'),
+    url(r'^findRecipes$', app.views.findRecipes, name='findRecipes'),
+    url(r'^invite$', app.views.invite, name='invite'),
     url(r'^login/$',
         django.contrib.auth.views.login,
         {

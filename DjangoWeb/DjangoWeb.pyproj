@@ -56,7 +56,11 @@
     <Folder Include="DjangoWeb\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\templates\app\profilePage.html" />
+    <Content Include="app\templates\app\findRecipes.html" />
+    <Content Include="app\templates\app\invite.html" />
+    <Content Include="app\templates\app\recipes.html" />
+    <Content Include="app\templates\app\family.html" />
+    <Content Include="app\templates\app\profile.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

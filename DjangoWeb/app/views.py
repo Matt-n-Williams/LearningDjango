@@ -45,12 +45,68 @@ def about(request):
         }
     )
 
-def profilePage(request):
+def profile(request):
     """Renders the Profile Page page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/profilePage.html',
+        'app/profile.html',
+        {
+            'username':'Username Placeholder',
+            'commentsMade':'Comments Made Placeholder.',
+            'recipeList':'Recipe List Placeholder',
+            'favouriteRecipes':'Favourite Recipes Placeholder',
+        }
+    )
+
+def recipes(request):
+    """Renders the Recipes page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/recipes.html',
+        {
+            'username':'Username Placeholder',
+            'commentsMade':'Comments Made Placeholder.',
+            'recipeList':'Recipe List Placeholder',
+            'favouriteRecipes':'Favourite Recipes Placeholder',
+        }
+    )
+
+def family(request):
+    """Renders the family page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/family.html',
+        {
+            'username':'Username Placeholder',
+            'commentsMade':'Comments Made Placeholder.',
+            'recipeList':'Recipe List Placeholder',
+            'favouriteRecipes':'Favourite Recipes Placeholder',
+        }
+    )
+
+def findRecipes(request):
+    """Renders the Find Recipes page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/findRecipes.html',
+        {
+            'username':'Username Placeholder',
+            'commentsMade':'Comments Made Placeholder.',
+            'recipeList':'Recipe List Placeholder',
+            'favouriteRecipes':'Favourite Recipes Placeholder',
+        }
+    )
+
+def invite(request):
+    """Renders the invite page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/invite.html',
         {
             'username':'Username Placeholder',
             'commentsMade':'Comments Made Placeholder.',
