@@ -16,3 +16,9 @@ class BootstrapAuthenticationForm(AuthenticationForm):
                                widget=forms.PasswordInput({
                                    'class': 'form-control',
                                    'placeholder':'Password'}))
+
+#Building basic comment form w/max char=240
+
+class CommentForm(forms.Form):
+    comment=forms.CharField(label='Comment',max_length=240)
+    #lifted from djangoproject.com/en/2.a/topics/forums/

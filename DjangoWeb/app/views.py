@@ -3,9 +3,13 @@ Definition of views.
 """
 
 from django.shortcuts import render
+from django.http import HttpResponseRedirect #forms
+from django.shortcuts import render #forms
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
+
+from .forms import CommentForm
 
 def home(request):
     """Renders the home page."""
@@ -116,3 +120,12 @@ def invite(request):
             'message':'message PH',
         }
     )
+
+def get_comment(request):
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid(): #calling is valid function from the form. 
+            return HttpResponseRedirect('/thanks/') #placeholder to check comment is valid
+    else:
+        form = CommentForm()
+    return render(request, 'comment.html',{'form': form})
