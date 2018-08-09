@@ -112,7 +112,7 @@ def invite(request):
             'title':'Invite Others',
             'firstName':'First Name.',
             'lastName':'Last Name.',
-            'e-mail':'e-mail',
+            'email':'e-mail',
             'message':'message PH',
         }
     )
