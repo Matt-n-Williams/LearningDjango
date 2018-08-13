@@ -2,7 +2,7 @@
 Definition of forms.
 """
 
-from django import forms
+from django import forms #form library 
 from django.contrib.auth.forms import AuthenticationForm
 from django.utils.translation import ugettext_lazy as _
 
@@ -19,6 +19,8 @@ class BootstrapAuthenticationForm(AuthenticationForm):
 
 #Building basic comment form w/max char=240
 
-class CommentForm(forms.Form):
-    comment=forms.CharField(label='Comment',max_length=240)
+from django import forms
+
+class NameForm(forms.Form):
+    your_name = forms.CharField(label='Your name', max_length=100)
     #lifted from djangoproject.com/en/2.a/topics/forums/
