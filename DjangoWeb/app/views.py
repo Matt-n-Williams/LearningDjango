@@ -3,13 +3,14 @@ Definition of views.
 """
 
 from django.shortcuts import render
+from app import forms #auto added by django for forms
 from django.http import HttpResponseRedirect #forms
 from django.shortcuts import render #forms
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
 
-from .forms import CommentForm
+from .forms import NameForm
 
 def home(request):
     """Renders the home page."""
@@ -121,11 +122,15 @@ def invite(request):
         }
     )
 
-def get_comment(request):
+def getname(request):
     if request.method == 'POST':
-        form = CommentForm(request.POST)
+        form = NameForm(request.POST)
         if form.is_valid(): #calling is valid function from the form. 
             return HttpResponseRedirect('/thanks/') #placeholder to check comment is valid
     else:
-        form = CommentForm()
-    return render(request, 'comment.html',{'form': form})
+        form = NameForm()
+    return render(request, 'Comment.html',{'form': form})
+
+#issue with the form as a function is we have nothing to render??
+#Think that is why it is throwing an error when I try to assign a url
+#Returns get_name is not a valid view fucntion

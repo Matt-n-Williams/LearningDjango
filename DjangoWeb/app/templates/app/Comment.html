@@ -1,7 +1,7 @@
 ﻿<form action="/your-name/" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form> 
 
 <!--basic form template, from docs.djangoproject.com/en/2.1/topics/forms/ -->
