@@ -68,6 +68,7 @@
     <Folder Include="HelloDjangoApp\templates\HelloDjangoApp\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloDjangoApp\static\Test.jpg" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\about.html" />
     <Content Include="HelloDjangoApp\static\site.css" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />

@@ -5,6 +5,8 @@ Definition of urls for DjangoWeb.
 from datetime import datetime
 from django.conf.urls import url
 import django.contrib.auth.views
+#Not good for production
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 import app.forms
 import app.views
@@ -49,3 +51,5 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
