@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BasicProject", "BasicProject\BasicProject.pyproj", "{F20803FE-D77C-4443-B421-BA1DCDF3245C}"
-EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DjangoWeb", "DjangoWeb\DjangoWeb.pyproj", "{990A297E-CAB7-4465-9F9C-5BD7AF236BAD}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F20803FE-D77C-4443-B421-BA1DCDF3245C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F20803FE-D77C-4443-B421-BA1DCDF3245C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F20803FE-D77C-4443-B421-BA1DCDF3245C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F20803FE-D77C-4443-B421-BA1DCDF3245C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{990A297E-CAB7-4465-9F9C-5BD7AF236BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{990A297E-CAB7-4465-9F9C-5BD7AF236BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{990A297E-CAB7-4465-9F9C-5BD7AF236BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
