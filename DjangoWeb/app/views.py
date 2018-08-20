@@ -11,7 +11,6 @@ from datetime import datetime
 from django.core.mail import send_mail
 from django.conf import settings
 from django.conf.urls.static import static
-
 from .forms import NameForm
 
 def home(request):
