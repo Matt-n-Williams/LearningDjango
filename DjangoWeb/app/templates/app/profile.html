@@ -6,7 +6,11 @@
 <h3>{{ commentsMade }}</h3>
 <h3>{{ recipeList }}</h3>
 <h3>{{ favouriteRecipes }}</h3>
+{% load static %}
+<img src="{% static "my_app/test.png" %}">
+
 
 <p>To do's: Add pictures, add BackEnd support. Figure out how multiple profiles works with unique URLs??</p>
 
 {% endblock %}
+
