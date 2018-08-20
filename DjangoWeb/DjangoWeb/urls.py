@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^recipes$', app.views.recipes, name='recipes'),
     url(r'^findRecipes$', app.views.findRecipes, name='findRecipes'),
     url(r'^invite$', app.views.invite, name='invite'),
-    url(r'^Comment$', app.views.about, name='Comment'),
+    #url(r'^Comment$', app.views.about, name='Comment'),
     url(r'^login/$',
         django.contrib.auth.views.login,
         {
