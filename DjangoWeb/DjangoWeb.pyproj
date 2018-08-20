@@ -31,6 +31,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\Comments\admin.py" />
+    <Compile Include="app\Comments\apps.py" />
+    <Compile Include="app\Comments\migrations\__init__.py" />
+    <Compile Include="app\Comments\models.py" />
+    <Compile Include="app\Comments\tests.py" />
+    <Compile Include="app\Comments\views.py" />
+    <Compile Include="app\Comments\__init__.py" />
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -45,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\Comments\" />
+    <Folder Include="app\Comments\migrations\" />
+    <Folder Include="app\Comments\templates\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
@@ -56,12 +66,13 @@
     <Folder Include="DjangoWeb\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Comments\templates\index.html" />
     <Content Include="app\templates\app\findRecipes.html" />
     <Content Include="app\templates\app\invite.html" />
     <Content Include="app\templates\app\recipes.html" />
     <Content Include="app\templates\app\family.html" />
     <Content Include="app\templates\app\profile.html" />
-    <Content Include="app\templates\app\Comment.html" />
+    <Content Include="app\templates\app\comment.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

@@ -22,5 +22,9 @@ class BootstrapAuthenticationForm(AuthenticationForm):
 from django import forms
 
 class NameForm(forms.Form):
-    your_name = forms.CharField(label='Your name', max_length=100)
+    content_type = forms.CharField(widget=forms.HiddenInput)
+    object_id = forms.IntegerField(widget=forms.HiddenInput)
+    content = forms.CharField(widget=forms.Textarea)
+    #parent_id = forms.CharField(widget=forms.HiddenInput, required = False)
     #lifted from djangoproject.com/en/2.a/topics/forums/
+
