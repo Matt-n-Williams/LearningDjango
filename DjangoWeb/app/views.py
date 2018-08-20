@@ -2,13 +2,15 @@
 Definition of views.
 """
 
-from django.shortcuts import render
 from app import forms #auto added by django for forms
 from django.http import HttpResponseRedirect #forms
 from django.shortcuts import render #forms
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
+from django.core.mail import send_mail
+from django.conf import settings
+from django.conf.urls.static import static
 
 from .forms import NameForm
 
@@ -108,19 +110,24 @@ def findRecipes(request):
     )
 
 def invite(request):
+    #Holder for sending e-mails
+    send_mail('Subject here','Here is the message.','HostHeritageRecipes@gmail.com',['flippersticker@hotmail.com'],fail_silently=False)
     """Renders the invite page."""
     assert isinstance(request, HttpRequest)
+    #Testing sending mail when visiting the invite page
     return render(
         request,
         'app/invite.html',
         {
             'title':'Invite Others',
-            'firstName':'First Name.',
-            'lastName':'Last Name.',
-            'email':'e-mail',
-            'message':'message PH',
+            'firstName':'First Name entry form',
+            'lastName':'Last Name entry form',
+            'email':'e-mail entry form',
+            'message':'message entry form',
+            #'sendmail':send_mail('Subject here','Here is the message.','HostHeritageRecipes@gmail.com',['flippersticker@hotmail.com'],fail_silently=False),
         }
     )
+
 
 def getname(request):
     if request.method == 'POST':
